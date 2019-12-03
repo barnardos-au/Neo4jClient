@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Tests.Shared", "Neo4jClient.Tests.Shared\Neo4jClient.Tests.Shared.shproj", "{22394FE7-45CA-4F89-BD96-D00511C1205C}"
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Shared", "Neo4jClient.Shared\Neo4jClient.Shared.shproj", "{ABF65F70-FDC1-4921-A3E8-F5D240A48EB3}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Shared", "Neo4jClient.Shared\Neo4jClient.Shared.shproj", "{C5B928CA-3E8E-4181-BACD-48CED40CEFDE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient", "Neo4jClient\Neo4jClient.csproj", "{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}"
 EndProject
@@ -19,10 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Full.Shared", "Neo4jClient.Full.Shared\Neo4jClient.Full.Shared.shproj", "{8BEF4534-C265-41DB-916C-A453155FC6A8}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Neo4jClient.Tests.Shared\Neo4jClient.Tests.Shared.projitems*{22394fe7-45ca-4f89-bd96-d00511c1205c}*SharedItemsImports = 13
-		Neo4jClient.Shared\Neo4jClient.Shared.projitems*{abf65f70-fdc1-4921-a3e8-f5d240a48eb3}*SharedItemsImports = 13
+		Neo4jClient.Full.Shared\Neo4jClient.Full.Shared.projitems*{8bef4534-c265-41db-916c-a453155fc6a8}*SharedItemsImports = 13
+		Neo4jClient.Shared\Neo4jClient.Shared.projitems*{c5b928ca-3e8e-4181-bacd-48ced40cefde}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

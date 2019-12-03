@@ -4,10 +4,10 @@ using System.Diagnostics;
 using System.Linq;
 using Newtonsoft.Json.Serialization;
 using System.Collections;
+using System.Collections.Specialized;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Threading.Tasks;
-using System.Collections.Specialized;
 
 namespace Neo4jClient.Cypher
 {
