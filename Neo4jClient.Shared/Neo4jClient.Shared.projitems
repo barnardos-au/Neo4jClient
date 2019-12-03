@@ -3,10 +3,10 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>c5b928ca-3e8e-4181-bacd-48ced40cefde</SharedGUID>
+    <SharedGUID>b4d33084-595d-4d2e-96b5-f9aa3ee100a1</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Neo4jClient</Import_RootNamespace>
+    <Import_RootNamespace>Neo4jClient.Shared1</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AddressResolver.cs" />
@@ -34,6 +34,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RootApiResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Attributes\Neo4jDateTimeAttribute.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClient.Shared.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CypherPartialResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\All.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherCapabilities.cs" />
@@ -42,8 +43,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`Return.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`TResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`Where.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`WithBookmark.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`With.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQuery`WithBookmark.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherPlanner.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherQuery.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherResultMode.cs" />
@@ -79,12 +80,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)DriverWrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\BatchExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherExecutionPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherExecutionPolicy.Shared.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherTransactionExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\EndpointBuilderExtension.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\ErrorGenerator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\ExecutionConfiguration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\ExecutionPolicyFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\GraphClientBasedExecutionPolicy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Execution\GraphClientBasedExecutionPolicy.Shared.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\GremlinExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\HttpResponseMessageExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\IExecutionPolicy.cs" />
@@ -109,6 +112,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\MemberInfoExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\ObjectExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GraphClient.Shared.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Gremlin\AggregateStep.cs" />
@@ -170,6 +174,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ITypedNodeReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JTokenExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mappers\MapperHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)NameValueCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Neo4jDriverExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoServerConfiguration.cs" />
@@ -203,7 +208,15 @@
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TypeMapping.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\ZonedDateTimeConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)StatementResultHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\BoltNeo4jTransaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\BoltResponse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltNeo4jTransactionProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltSuppressTransactionProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionPromotableSinglePhasesNotification.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionScopeProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\ClosedTransactionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\IInternalTransactionalGraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\INeo4jTransaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransaction.cs" />
@@ -211,7 +224,18 @@
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransactionExecutionEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransactionManager.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransactionResourceManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Neo4jRestTransaction.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Neo4jTransactionProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Neo4jTransactionResourceManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\SuppressTransactionProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\ThreadContextHelpers.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionConnectionContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionContext.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionExecutionEnvironment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionHttpUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionScopeProxy.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Transactions\TransactionSinglePhaseNotification.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UriCreator.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Utilities.cs" />
   </ItemGroup>
@@ -219,7 +243,5 @@
     <None Include="$(MSBuildThisFileDirectory)Diagrams\Batching.cd" />
     <None Include="$(MSBuildThisFileDirectory)Diagrams\GraphClientCore.cd" />
     <None Include="$(MSBuildThisFileDirectory)Diagrams\Responses.cd" />
-    <None Include="$(MSBuildThisFileDirectory)Indexing.cd" />
-    <None Include="$(MSBuildThisFileDirectory)packages.config" />
   </ItemGroup>
 </Project>

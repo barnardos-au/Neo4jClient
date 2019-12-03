@@ -5,9 +5,6 @@ using Neo4jClient.ApiModels.Cypher;
 using Neo4jClient.Cypher;
 using Neo4jClient.Transactions;
 
-//using Neo4jClient.Transactions;
-
-
 namespace Neo4jClient.Execution
 {
     /// <summary>
@@ -15,66 +12,28 @@ namespace Neo4jClient.Execution
     /// </summary>
     internal partial class CypherExecutionPolicy : GraphClientBasedExecutionPolicy
     {
-        public CypherExecutionPolicy(IGraphClient client) : base(client)
+
+        private INeo4jTransaction GetTransactionInScope()
         {
+            return null;
         }
 
-
-
-
-        public override string SerializeRequest(object toSerialize)
+        public override Uri BaseEndpoint
         {
-            var query = toSerialize as CypherQuery;
-            if (query == null)
+            get
             {
-                throw new InvalidOperationException(
-                    "Unsupported operation: Attempting to serialize something that was not a query.");
-            }
+                if(InTransaction)
+                    throw new NotImplementedException("Not implemented in the PCL version at present.");
 
-            if (InTransaction)
-            {
-                return Client
-                    .Serializer
-                    .Serialize(new CypherStatementList
-                    {
-                        new CypherTransactionStatement(query, query.ResultFormat == CypherResultFormat.Rest)
-                    });
-            }
-            return Client.Serializer.Serialize(new CypherApiQuery(query));
-        }
-
-        public override void AfterExecution(IDictionary<string, object> executionMetadata, object executionContext)
-        {
-            if (Client == null || executionMetadata == null || executionMetadata.Count == 0)
-            {
-                return;
-            }
-
-            // determine if we need to update the transaction end point
-            var transaction = executionContext as INeo4jTransaction;
-            if (transaction == null || transaction.Endpoint != null)
-            {
-                return;
-            }
-
-            object locationValue;
-            if (!executionMetadata.TryGetValue("Location", out locationValue))
-            {
-                return;
-            }
-
-            var locationHeader = locationValue as IEnumerable<string>;
-            if (locationHeader == null)
-            {
-                return;
-            }
-
-            var generatedEndpoint = locationHeader.FirstOrDefault();
-            if (!string.IsNullOrEmpty(generatedEndpoint))
-            {
-                transaction.Endpoint = new Uri(generatedEndpoint);
+                    return Client.CypherEndpoint;
             }
         }
 
+        public override TransactionExecutionPolicy TransactionExecutionPolicy
+        {
+            get { return TransactionExecutionPolicy.Allowed; }
+        }
+
+     
     }
 }

@@ -183,7 +183,8 @@ namespace Neo4jClient.Test.Transactions
         {
             const string headerName = "MyTestHeader";
             const string headerValue = "myTestHeaderValue";
-            var customHeaders = new NameValueCollection { {headerName, headerValue} };
+            var customHeaders = new NameValueCollection();
+            customHeaders.Add(headerName, headerValue);
 
 
             var initTransactionRequest = MockRequest.PostJson("/transaction", @"{

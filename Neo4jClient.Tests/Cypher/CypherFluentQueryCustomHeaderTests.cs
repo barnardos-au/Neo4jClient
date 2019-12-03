@@ -15,7 +15,8 @@ namespace Neo4jClient.Test.Cypher
             const string headerName = "HeaderName";
             const string headerValue = "TestHeaderValue";
             var client = Substitute.For<IRawGraphClient>();
-            var customHeaders = new NameValueCollection {{headerName, headerValue}};
+            var customHeaders = new NameValueCollection();
+            customHeaders.Add(headerName, headerValue);
 
             var query = new CypherFluentQuery(client)
                 .MaxExecutionTime(100)
@@ -34,7 +35,8 @@ namespace Neo4jClient.Test.Cypher
             const string headerName = "HeaderName";
             const string headerValue = "TestHeaderValue";
             var client = Substitute.For<IRawGraphClient>();
-            var customHeaders = new NameValueCollection { { headerName, headerValue } };
+            var customHeaders = new NameValueCollection();
+            customHeaders.Add(headerName, headerValue);
 
             var query = new CypherFluentQuery(client)
                 .CustomHeaders(customHeaders)
@@ -50,7 +52,8 @@ namespace Neo4jClient.Test.Cypher
         {
             const string headerName = "HeaderName";
             const string headerValue = "TestHeaderValue";
-            var customHeaders = new NameValueCollection { { headerName, headerValue } };
+            var customHeaders = new NameValueCollection();
+            customHeaders.Add(headerName, headerValue);
 
             var client = Substitute.For<IRawGraphClient>();
             var query = new CypherFluentQuery(client)

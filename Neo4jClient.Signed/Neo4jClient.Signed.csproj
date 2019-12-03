@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <Version>1.0.0</Version>
+    <Title>Neo4jClient</Title>
+    <Authors>Neil Dobson</Authors>
+    <Company>Readify</Company>
+    <Description>Fork of Neo4jClient .NET client binding for Neo4j</Description>
+    <PackageProjectUrl>https://github.com/Readify/Neo4jClient</PackageProjectUrl>
+    <PackageTags>neo4j cypher mapping</PackageTags>
+    <Copyright>Copyright ©2011 Readify</Copyright>
+    <RepositoryUrl>https://github.com/barnardos-au/Neo4jClient</RepositoryUrl>
+    <AssemblyName>Neo4jClient</AssemblyName>
+    <PackageId>Barnardos.Neo4jClient.Signed</PackageId>
+    <RootNamespace>Neo4jClient</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.6.0" />
+    <PackageReference Include="Microsoft.VisualBasic" Version="10.3.0" />
+    <PackageReference Include="Neo4j.Driver.Signed" Version="1.7.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>Neo4jClient.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Transactions" />
+  </ItemGroup>
+  
+  <Import Project="..\Neo4jClient.Shared\Neo4jClient.Shared.projitems" Label="Shared" />
+
+</Project>
