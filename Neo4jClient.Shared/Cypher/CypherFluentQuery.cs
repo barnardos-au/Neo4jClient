@@ -7,6 +7,7 @@ using System.Collections;
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Threading.Tasks;
+using System.Collections.Specialized;
 
 namespace Neo4jClient.Cypher
 {

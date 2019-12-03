@@ -3,10 +3,10 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
     <HasSharedItems>true</HasSharedItems>
-    <SharedGUID>b4d33084-595d-4d2e-96b5-f9aa3ee100a1</SharedGUID>
+    <SharedGUID>457E58FA-DF31-44D2-AF00-F46CDE500284</SharedGUID>
   </PropertyGroup>
   <PropertyGroup Label="Configuration">
-    <Import_RootNamespace>Neo4jClient.Shared1</Import_RootNamespace>
+    <Import_RootNamespace>Neo4jClient.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)AddressResolver.cs" />
@@ -174,7 +174,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ITypedNodeReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JTokenExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mappers\MapperHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)NameValueCollection.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Neo4jDriverExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoServerConfiguration.cs" />

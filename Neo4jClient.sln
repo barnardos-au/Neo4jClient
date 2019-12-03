@@ -3,69 +3,49 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29519.87
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A6744547-9D7F-4FF5-B7C5-A184CFBF1E06}"
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Tests.Shared", "Neo4jClient.Tests.Shared\Neo4jClient.Tests.Shared.shproj", "{22394FE7-45CA-4F89-BD96-D00511C1205C}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Shared", "Neo4jClient.Shared\Neo4jClient.Shared.shproj", "{ABF65F70-FDC1-4921-A3E8-F5D240A48EB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient", "Neo4jClient\Neo4jClient.csproj", "{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient.Signed", "Neo4jClient.Signed\Neo4jClient.Signed.csproj", "{3398687E-51A0-4924-B76E-4F044FBD0E2A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient.Tests", "Neo4jClient.Tests\Neo4jClient.Tests.csproj", "{9294C916-D85E-4E17-8996-924AC18D7A74}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83123194-8ED3-4713-B947-99E601F1509E}"
 	ProjectSection(SolutionItems) = preProject
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Tests.Shared", "Neo4jClient.Tests.Shared\Neo4jClient.Tests.Shared.shproj", "{22394FE7-45CA-4F89-BD96-D00511C1205C}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{50240473-4B2D-4623-8CE9-7DFF91140574}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient", "Neo4jClient\Neo4jClient.csproj", "{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Shared", "Neo4jClient.Shared\Neo4jClient.Shared.shproj", "{B4D33084-595D-4D2E-96B5-F9AA3EE100A1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient.Signed", "Neo4jClient.Signed\Neo4jClient.Signed.csproj", "{91555D69-747A-4FA8-8D1A-017D2C430F21}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Neo4jClient.Tests", "Neo4jClient.Tests\Neo4jClient.Tests.csproj", "{FC96F493-43ED-4D20-AC82-1F10654B8168}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		Neo4jClient.Tests.Shared\Neo4jClient.Tests.Shared.projitems*{22394fe7-45ca-4f89-bd96-d00511c1205c}*SharedItemsImports = 13
-		Neo4jClient.Shared\Neo4jClient.Shared.projitems*{b4d33084-595d-4d2e-96b5-f9aa3ee100a1}*SharedItemsImports = 13
+		Neo4jClient.Shared\Neo4jClient.Shared.projitems*{abf65f70-fdc1-4921-a3e8-f5d240a48eb3}*SharedItemsImports = 13
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Full - Debug|Any CPU = Full - Debug|Any CPU
-		Portable - Debug|Any CPU = Portable - Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Full - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Full - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Portable - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Portable - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A5462CA-928D-4561-AB3A-0F5AACF8FA6C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Full - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Full - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Portable - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Portable - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{91555D69-747A-4FA8-8D1A-017D2C430F21}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Full - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Full - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Portable - Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Portable - Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FC96F493-43ED-4D20-AC82-1F10654B8168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9294C916-D85E-4E17-8996-924AC18D7A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9294C916-D85E-4E17-8996-924AC18D7A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9294C916-D85E-4E17-8996-924AC18D7A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9294C916-D85E-4E17-8996-924AC18D7A74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{22394FE7-45CA-4F89-BD96-D00511C1205C} = {50240473-4B2D-4623-8CE9-7DFF91140574}
-		{FC96F493-43ED-4D20-AC82-1F10654B8168} = {50240473-4B2D-4623-8CE9-7DFF91140574}
-	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D760067A-9B0B-4311-8BD9-D1B4D9B00BA5}
+		SolutionGuid = {39A3A9F7-D8DA-4EF3-BD49-3720AE2943E6}
 	EndGlobalSection
 EndGlobal
