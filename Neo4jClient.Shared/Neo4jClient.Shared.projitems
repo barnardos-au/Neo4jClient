@@ -9,7 +9,6 @@
     <Import_RootNamespace>Neo4jClient</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)AddressResolver.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AggregateExceptionExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)AmbiguousRelationshipDirectionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\BatchResponse.cs" />
@@ -20,7 +19,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\Cypher\CypherStatementList.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\Cypher\CypherTransactionStatement.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\Cypher\PathsResult.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ApiModels\Cypher\PathsResultBolt.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\ExceptionResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\ExtensionsApiResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\FieldChange.cs" />
@@ -33,7 +31,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RelationshipTemplate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RootApiResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Attributes\Neo4jDateTimeAttribute.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CypherPartialResult.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\All.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherCapabilities.cs" />
@@ -76,7 +73,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\VbComparer.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DeleteMode.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)DetachedNodeException.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)DriverWrapper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\BatchExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherTransactionExecutionPolicy.cs" />
@@ -170,7 +166,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ITypedNodeReference.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)JTokenExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Mappers\MapperHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Neo4jDriverExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NeoServerConfiguration.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)NodeReference.cs" />
@@ -201,9 +196,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TimeZoneInfoConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TypeConverterBasedJsonConverter.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\TypeMapping.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Serialization\ZonedDateTimeConverter.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)StatementResultHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\BoltResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\IInternalTransactionalGraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\INeo4jTransaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ITransaction.cs" />

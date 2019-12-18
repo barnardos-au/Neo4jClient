@@ -8,11 +8,6 @@ namespace Neo4jClient.Transactions
         {
             return new ThreadContextWrapper<TransactionScopeProxy>();
         }
-
-        internal static IScopedTransactions<BoltTransactionScopeProxy> CreateBoltScopedTransactions()
-        {
-            return new ThreadContextWrapper<BoltTransactionScopeProxy>();
-        }
     }
 
     internal interface IScopedTransactions<T> where T : class

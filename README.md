@@ -1,34 +1,19 @@
 ## What is Neo4jClient?
-
 A .NET client for neo4j. Supports basic CRUD operations, Cypher and Gremlin queries via fluent interfaces, and some indexing operations.
 
-Grab the latest drop straight from the `Neo4jClient` package on [NuGet](http://nuget.org/List/Packages/Neo4jClient).
+## Why has this been forked?
+This is a fork of the Readify [Neo4jClient](https://github.com/Readify/Neo4jClient) repository with BOLT support removed.
 
-Read [our wiki doco](https://github.com/Readify/Neo4jClient/wiki).
+## Why has this been done?
+Here at Barnardos we've started using [Neo4jMapper](https://github.com/barnardos-au/Neo4jMapper) in place of Neo4jClient, particularly for queries using the BOLT driver.
 
-## Current Builds
-The official neo4jclient build and nuget package is automated via [AppVeyor](http://www.appveyor.com). 
+[Neo4j .NET Driver](https://github.com/neo4j/neo4j-dotnet-driver) is going through some API changes which is/has resulted in changes being made to Neo4jClient, in particular dropping support of synchronous methods. This will affect us as we have a lot of legacy code, most of which is not async.
 
-### Stable (3.x)
+By removing support for BOLT and unbundling the Neo4j .NET Driver we can support our existing code while moving forward with Neo4jMapper and any future changes to Neo4j .NET Driver APIs.
 
-[![Build status](https://ci.appveyor.com/api/projects/status/q96upd53uq0hyepe?svg=true)](https://ci.appveyor.com/project/ChrisSkardon/neo4jclient)
+Grab the latest drop straight from the `Barnardos.Neo4jClient` package on [NuGet](https://www.nuget.org/packages/Barnardos.Neo4jClient/).
 
-#### Changes in 3.x
-
-* Bolt!
-* Transactions now use `AsyncLocal<>` instead of `ThreadStatic`
-  * Transactions still don't work in the .NET Core version for the same reason as listed below (in `Breaking Changes in 2.0`)
-  * `TransactionScope` _does_ exist in `NetStandard 2.0` - but some of the other bits surrounding the Transaction management doesn't. 
-* JSON.NET updated to 10.0.3
-* `PathResults` doesn't work with Bolt, you need to use `PathResultsBolt` instead.
-
-#### Dependency Changes in 2.0
-
-* JSON.NET updated to 9.0.1 
-
-#### Breaking Changes in 2.0
-
-* If using the *DotNet Core* version of `Neo4jClient` - transactions will **not** work. This will be returned when DotNet Core gets the `TransactionScope` (See [this comment](https://github.com/Readify/Neo4jClient/issues/135#issuecomment-231981065) for more details).
+Read [Readify wiki doco](https://github.com/Readify/Neo4jClient/wiki).
 
 ## License Information
 

@@ -13,10 +13,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\GremlinTableCapResponseTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiModels\RootApiResponseTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ApiUsageIdeas.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClientTests\Bookmarks\BookmarkTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClientTests\ConnectAsyncTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltTestHarness.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClientTests\Cypher\ExecuteGetCypherResultsTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)CultureInfoSetupFixture.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\AggregateTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Cypher\CypherFluentQueryAdvancedTests.cs" />
@@ -62,8 +58,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Domain\StorageLocation.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Domain\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\MemberInfoExtensionsTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Extensions\Neo4jDriverExtensionsTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClientTests\BoltGraphClientTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Extensions\ObjectExtensionTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientTests\ConnectAsyncTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClientTests\ConnectTests.cs" />
@@ -132,9 +126,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\CustomJsonDeserializerTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\CustomJsonSerializerTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\CypherJsonDeserializerTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Serialization\SerializesDateTimeAsNeoDateTimeTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Serialization\UserSuppliedSerializationTests.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)StatementResultHelperTests.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TestsImplementFixture.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)TestUtilities.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)UtilitiesTests.cs" />

@@ -9,8 +9,6 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Neo4jClient.Shared", "Neo4j
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient", "Neo4jClient\Neo4jClient.csproj", "{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient.Signed", "Neo4jClient.Signed\Neo4jClient.Signed.csproj", "{3398687E-51A0-4924-B76E-4F044FBD0E2A}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Neo4jClient.Tests", "Neo4jClient.Tests\Neo4jClient.Tests.csproj", "{9294C916-D85E-4E17-8996-924AC18D7A74}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{83123194-8ED3-4713-B947-99E601F1509E}"
@@ -36,10 +34,6 @@ Global
 		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3370C1AA-D150-44C6-B1A0-126D03A3C9BA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3398687E-51A0-4924-B76E-4F044FBD0E2A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9294C916-D85E-4E17-8996-924AC18D7A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9294C916-D85E-4E17-8996-924AC18D7A74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9294C916-D85E-4E17-8996-924AC18D7A74}.Release|Any CPU.ActiveCfg = Release|Any CPU

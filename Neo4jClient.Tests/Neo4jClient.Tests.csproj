@@ -9,7 +9,6 @@
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.9.0" />
     <PackageReference Include="Moq" Version="4.13.1" />
-    <PackageReference Include="Neo4j.Driver" Version="1.7.2" />
     <PackageReference Include="NSubstitute" Version="4.2.1" />
     <PackageReference Include="xunit" Version="2.4.1" />
   </ItemGroup>

@@ -9,17 +9,9 @@
     <Import_RootNamespace>Neo4jClient.Full.Shared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)BoltGraphClient.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\CypherExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Execution\GraphClientBasedExecutionPolicy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GraphClient.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\BoltNeo4jTransaction.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltNeo4jTransactionProxy.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltSuppressTransactionProxy.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionContext.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionManager.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionPromotableSinglePhasesNotification.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Transactions\Bolt\BoltTransactionScopeProxy.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\ClosedTransactionException.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\Neo4jRestTransaction.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Transactions\Neo4jTransactionProxy.cs" />
